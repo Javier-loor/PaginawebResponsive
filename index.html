@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Configura la vista para dispositivos móviles -->
+    <title>Pagina web (responsiva) </title><!-- Título de la página que aparece en la pestaña del navegador -->
+    
+    <!---- Enlace al archivo CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome ---- Enlace al archivo CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+<body>
+    <!-- Navbar -- -- Encabezado -- -- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"><!-- Navbar que se expande en pantallas grandes y es fija en la parte superior -->
+        <div class="container"> <!-- Contenedor para alinear el contenido -->
+            <a class="navbar-brand" href="#"><a><!-- Enlace que representa la marca de la navbar -->
+                <i class="fas fa-globe-americas me-2"></i><!-- Ícono de Font Awesome que representa un globo (globo terráqueo) -->
+                Viaje  Turismo  Rutas Play <!-- Texto que se muestra junto al ícono -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"><!-- Contenido de la navbar que se colapsa -->
+                <ul class="navbar-nav ms-auto"><!-- Lista de navegación alineada a la derecha -->
+                    <li class="nav-item"><!-- Elemento de la lista -->
+                        <a class="nav-link" href="#destinos">Destinos</a><!-- Enlace a la sección de destinos -->
+                    </li>
+                    <li class="nav-item"><!-- Elemento de la lista -->
+                        <a class="nav-link" href="#servicios">Servicios</a><!-- Enlace a la sección de servicios -->
+                    </li>
+                    <li class="nav-item"><!-- Elemento de la lista -->
+                        <a class="nav-link" href="#ofertas">Ofertas</a><!-- Enlace a la sección de ofertas -->
+                    <li class="nav-item"><!-- Elemento de la lista -->
+                            <a class="nav-link" href="#contacto">Contacto</a><!-- Enlace a la sección de contacto -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección principal (Hero Section) -->
+    <section class="hero-section text-center"><!-- Sección de héroe centrada -->
+        <div class="container"><!-- Contenedor para alinear el contenido -->
+            <h1 class="display-4 mb-4">Bienvenido a Ecuador</h1> <!-- Título principal -->
+            <p class="lead mb-4">Rutas Play te ofrece descubrir con nosotros las bellezas más increíbles que tus ojos verán y otros destinos únicos en el mundo</p><!-- Descripción breve -->
+            <a href="#destinos" class="btn btn-light btn-lg">¡Explora Ya!</a><!-- Botón que redirige a la sección de destinos -->
+        </div>
+    </section>
+
+    <!-- Sección de Destinos Populares -->
+    <section id="destinos" class="container my-5"><!-- Sección de destinos con margen superior e inferior -->
+        <h2 class="text-center mb-4">Destinos Populares</h2><!-- Título de la sección -->
+        <div class="row g-4"><!-- Fila de elementos con espacio entre ellos -->
+            <!-- Destino: Quito -->
+            <div class="col-md-4"><!-- Columna que ocupa 4 de 12 espacios en pantallas medianas y grandes -->
+                <div class="card h-100"><!-- Tarjeta que ocupa toda la altura disponible -->
+                    <img src="imagen/Quito.jpg" class="card-img-top" alt="Quito"><!-- Imagen de la tarjeta -->
+                    <div class="card-body"><!-- Cuerpo de la tarjeta -->
+                        <h5 class="card-title">Quito</h5>
+                        <p class="card-text">Descubre el casco histórico, sus iglesias coloniales, y vistas impresionantes desde el Panecillo.</p>
+                        <a href="#" class="btn btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Guayaquil -->
+            <div class="col-md-4"><!-- Columna que ocupa 4 de 12 espacios en una fila en pantallas medianas y más grandes -->
+                <div class="card"><!-- Contenedor de la tarjeta (card) que agrupa el contenido -->
+                    <img src="imagen/Guayaquil.jpg" class="card-img-top img-fluid" alt="Guayaquil"><!-- Imagen de la tarjeta, con clase para que sea responsiva -->
+                    <div class="card-body"><!-- Contenedor del cuerpo de la tarjeta que incluye el título y el texto -->
+                        <h5 class="card-title">Guayaquil</h5><!-- Título de la tarjeta -->
+                        <p class="card-text">Explora el Malecón 2000, el barrio Las Peñas, y vive el ambiente cálido de esta ciudad portuaria.</p><!-- Descripción de la tarjeta -->
+                        <a href="#" class="btn btn-outline-primary">Ver más</a><!-- Botón que permite al usuario ver más información, con estilo de Bootstrap -->
+                    </div>
+                </div>
+            </div>
+        <!-- Galápagos -->
+        <div class="col-md-4"><!-- Columna que ocupa 4 de 12 espacios en una fila en pantallas medianas y más grandes -->
+            <div class="card"><!-- Contenedor de la tarjeta (card) que agrupa el contenido -->
+                <img src="imagen/Galápagos.jpg" class="card-img-top img-fluid" alt="Galápagos"><!-- Imagen de la tarjeta, con clase para que sea responsiva -->
+                <div class="card-body"><!-- Contenedor del cuerpo de la tarjeta que incluye el título y el texto -->
+                    <h5 class="card-title">Galápagos</h5><!-- Título de la tarjeta -->
+                    <p class="card-text">Adéntrate en el paraíso natural con su fauna única y paisajes espectaculares.</p><!-- Descripción de la tarjeta -->
+                    <a href="#" class="btn btn-outline-primary">Ver más</a><!-- Botón que permite al usuario ver más información, con estilo de Bootstrap -->
+                </div>
+            </div>
+        </div>
+        <!-- Cuenca -->
+        <div class="col-md-4"><!-- Columna que ocupa 4 de 12 espacios en una fila en pantallas medianas y más grandes -->
+            <div class="card"><!-- Contenedor de la tarjeta (card) que agrupa el contenido -->
+                <img src="imagen/Cuenca.jpg" class="card-img-top img-fluid" alt="Cuenca"><!-- Imagen de la tarjeta, con clase para que sea responsiva -->
+                <div class="card-body"><!-- Contenedor del cuerpo de la tarjeta que incluye el título y el texto -->
+                    <h5 class="card-title">Cuenca</h5><!-- Título de la tarjeta -->
+                    <p class="card-text">Conoce la joya colonial de los Andes, famosa por su arquitectura, cultura y sombreros de paja toquilla.</p><!-- Descripción de la tarjeta -->
+                    <a href="#" class="btn btn-outline-primary">Ver más</a><!-- Botón que permite al usuario ver más información, con estilo de Bootstrap -->
+                </div>
+            </div>
+        </div>
+        <!-- Baños -->
+        <div class="col-md-4"><!-- Columna que ocupa 4 de 12 espacios en una fila en pantallas medianas y más grandes -->
+            <div class="card"><!-- Contenedor de la tarjeta (card) que agrupa el contenido -->
+                <img src="imagen/Baños.jpg" class="card-img-top img-fluid" alt="Baños de Agua Santa"><!-- Imagen de la tarjeta, con clase para que sea responsiva -->
+                <div class="card-body"><!-- Contenedor del cuerpo de la tarjeta que incluye el título y el texto -->
+                    <h5 class="card-title">Baños de Agua Santa</h5><!-- Título de la tarjeta -->
+                    <p class="card-text">Disfruta de cascadas, aguas termales, y actividades de aventura en este destino mágico.</p><!-- Descripción de la tarjeta -->
+                    <a href="#" class="btn btn-outline-primary">Ver más</a><!-- Botón que permite al usuario ver más información, con estilo de Bootstrap -->
+                </div>
+            </div>
+        </div>
+        <!-- Montañita -->
+        <div class="col-md-4"><!-- Columna que ocupa 4 de 12 espacios en una fila en pantallas medianas y más grandes -->
+            <div class="card"><!-- Contenedor de la tarjeta (card) que agrupa el contenido -->
+                <img src="imagen/Montañita.jpg" class="card-img-top img-fluid" alt="Montañita"><!-- Imagen de la tarjeta, con clase para que sea responsiva -->
+                <div class="card-body"><!-- Contenedor del cuerpo de la tarjeta que incluye el título y el texto -->
+                    <h5 class="card-title">Montañita</h5><!-- Título de la tarjeta -->
+                    <p class="card-text">Popular para los turistas y amantes del surf, es conocida por su vibrante vida nocturna y su ambiente relajado.</p><!-- Descripción de la tarjeta -->
+                    <a href="#" class="btn btn-outline-primary">Ver más</a><!-- Botón que permite al usuario ver más información, con estilo de Bootstrap -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services-section"><!-- Sección que agrupa los servicios, con un ID para enlazar y una clase para estilos -->
+        <div class="container"> <!-- Contenedor que permite que el contenido sea responsivo -->
+            <h2 class="text-center mb-5">Nuestros Servicios</h2><!-- Título de la sección, centrado y con margen inferior -->
+        </ul><!-- Lista desordenada que contiene los servicios ofrecidos -->
+           <li>Paquetes personalizados para grupos y familias.</li><!-- Primer servicio ofrecido -->
+           <li>Gestión de actividades y excursiones locales.</li><!-- Segundo servicio ofrecido -->
+                <li>Reservas de hoteles y transporte.</li> <!-- Tercer servicio ofrecido -->
+                <li>Guías turísticos multilingües.</li><!-- Cuarto servicio ofrecido -->
+                <li>Experiencias gastronómicas.</li><!-- Quinto servicio ofrecido -->
+                <li>Fotografía y video profesional.</li><!-- Sexto servicio ofrecido -->
+                <li>Actividades extremas.</li> <!-- Séptimo servicio ofrecido -->
+            </ul><!-- Fin de la lista desordenada -->
+            <div class="row"><!-- Fila que contiene los elementos de servicio -->
+                <div class="col-md-4"><!-- Columna que ocupa 4 de 12 espacios en una fila en pantallas medianas y más grandes -->
+                    <div class="service-item text-center"> <!-- Contenedor para un ítem de servicio, centrado -->
+                    <div class="service-item text-center"> <!-- Contenedor para un ítem de servicio, centrado -->
+                        <i class="fas fa-map-marked-alt fa-3x mb-3 text-primary"></i><!-- Ícono de Font Awesome que representa un mapa, con tamaño y color específicos -->
+                        <h4>Tours Guiados</h4> <!-- Título del servicio específico -->
+                        <p>Explora Ecuador con nuestros expertos guías locales.</p><!-- Descripción del servicio específico -->
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="container my-5">
+        <div class="row justify-content-center"><!-- Sección centrada para el formulario de contacto -->
+            <div class="col-md-8">
+                <div class="contact-form">
+                    <h2 class="text-center mb-4">Contáctanos Ya</h2>   <!-- Título del formulario -->
+                    <form><!-- Inicio del formulario -->
+                        <div class="mb-3"><!-- Campo para ingresar el nombre -->
+                            <input type="text" class="form-control" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3"><!-- Campo para ingresar el correo electrónico -->
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico">
+                        </div>
+                        <div class="mb-3"> <!-- Campo para ingresar el mensaje -->
+                            <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button> <!-- Botón para enviar el mensaje -->
+                    </form><!-- Fin del formulario -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="custom-footer  text-white py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start"><!-- Columna izquierda: Mensaje de bienvenida -->
+                    <h3>Rutas Play te espera</h3>
+                    <p>Tu mejor opción para descubrir Ecuador Siguenos en nuestras Redes Sociales</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end"><!-- Columna derecha: Iconos de redes sociales -->
+                    <div class="social-icons">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f fa-lg"> </i> Facebook </a><!-- Enlace a Facebook -->
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"> </i> Instagram </a><!-- Enlace a Instagram -->
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"> </i> Twitter </a> <!-- Enlace a Twitter -->
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"> </i> Linkedin</a> <!-- Enlace a LinkedIn -->
+                    </div>
+                </div>
+          <!-- Segunda fila: Derechos reservados -->
+        <div class="row mt-2">
+            <div class="col text-center">
+                <p class="mb-0 text-white">© 2024 Viaje y Turismo. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

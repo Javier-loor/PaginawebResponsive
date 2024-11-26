@@ -1,0 +1,99 @@
+ /* Estilos generales */
+ :root {
+    /* Color primario utilizado en el diseño */
+    --primary-color: #130e11fd;    
+     /* Color secundario utilizado en el diseño */
+    --secondary-color: #6c757d;
+    /* Color para efectos de hover (cuando el mouse pasa sobre un elemento) */
+    --hover-color: #0b5ed7;
+    
+}
+.custom-footer {
+background-color: var(--primary-color); /* Usando la variable para el color de fondo */
+color: white; /* Asegúrate de que el texto sea legible */
+padding: 1rem 0; /* Ajusta el padding según sea necesario */
+}
+/* Hero section con imagen de fondo */
+.hero-section {
+    /* Establece un gradiente lineal como fondo, con un overlay oscuro para dar profundidad */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagen/ecuador.jpg'); /* Agrega la imagen de fondo de Ecuador */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para que cubra toda la sección */
+    background-position: center; /* Centra la imagen de fondo horizontalmente */
+    color: white;/* Establece el color del texto en blanco para que se vea sobre la imagen de fondo */
+    padding: 100px 0;/* Agrega un padding de 100px en la parte superior e inferior para dar espacio */
+    margin-bottom: 2rem;/* Agrega un margen inferior de 2rem para separar la sección de la siguiente */
+}
+
+/* Navbar personalizado */
+.navbar {
+    background-color: rgba(218, 24, 89, 0.89) !important; /* Establece el color de fondo de la barra de navegación con un color RGBA y aplica un efecto de opacidad */
+    backdrop-filter: blur(10px); /* Aplica un desenfoque de fondo de 10px para dar un efecto de profundidad */
+}
+
+/* Tarjetas de destinos */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    /* Aplica una transición suave al transformarse y al cambiar la sombra, con una duración de 0.3 segundos y un efecto de suavizado */
+    margin-bottom: 2rem; /* Agrega un margen inferior de 2rem para separar las tarjetas entre sí */
+    border: none;    /* Elimina el borde de las tarjetas */
+    border-radius: 15px;/* Redondea las esquinas de las tarjetas con un radio de 15px */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del área de la tarjeta */
+}
+
+.card:hover {
+    transform: translateY(-5px);    /* Mueve la tarjeta hacia arriba 5px al pasar el mouse sobre ella, creando un efecto de elevación */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);/* Aplica una sombra a la tarjeta para darle un efecto de profundidad al pasar el mouse */
+}
+
+.card-img-top {
+    height: 200px;/* Establece la altura de la imagen superior de la tarjeta en 200px */
+    object-fit: cover;/* Asegura que la imagen cubra todo el área asignada sin distorsionarse */
+}
+
+/* Servicios */
+.services-section {
+    background-color: #f8f9fa;    /* Establece el color de fondo de la sección de servicios con un tono claro */
+    padding: 4rem 0;/* Agrega un padding de 4rem en la parte superior e inferior para crear espacio alrededor de la sección */
+}
+
+.service-item {
+    padding: 1.5rem; /* Agrega un padding de 1.5rem para crear espacio interno dentro de cada elemento de servicio */
+    border-radius: 10px;/* Redondea las esquinas de cada elemento de servicio con un radio de 10px */
+    background: white; /* Establece el color de fondo de cada elemento de servicio como blanco */
+    margin-bottom: 1rem;   /* Agrega un margen inferior de 1rem para separar los elementos de servicio entre sí */
+    transition: transform 0.3s ease;/* Aplica una transición suave al transformarse, con una duración de 0.3 segundos y un efecto de suavizado */
+}
+
+.service-item:hover {
+    transform: translateY(-3px); /* Mueve el elemento de servicio hacia arriba 3px al pasar el mouse sobre él, creando un efecto de elevación */
+}
+
+
+/* Formulario de contacto */
+.contact-form {
+    background: white;/* Establece el color de fondo del formulario como blanco */
+    padding: 2rem; /* Agrega un padding de 2rem para crear espacio interno alrededor del contenido del formulario */
+    border-radius: 15px;/* Redondea las esquinas del formulario con un radio de 15px */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);/* Aplica una sombra suave al formulario para darle un efecto de elevación */
+}
+
+/* Redes sociales */
+.social-icons a {
+    transition: transform 0.3s ease;/* Agrega una transición suave al transformarse, con una duración de 0.3 segundos y un efecto de suavizado */
+    display: inline-block;/* Establece que los enlaces se comporten como elementos en línea que pueden tener dimensiones (bloques) */
+    margin: 0 10px; /* Agrega un margen horizontal de 10px a la izquierda y a la derecha para separar los iconos de redes sociales */
+}
+ /* Estilo para el estado hover (cuando el mouse está sobre el enlace) */
+.social-icons a:hover {
+    transform: translateY(-3px);/* Mueve el enlace hacia arriba 3px al pasar el mouse sobre él, creando un efecto de elevación */
+}
+
+/* Botón de menú hamburguesa */
+.navbar-toggler {
+    border: none;/* Elimina el borde del botón para un diseño más limpio */
+    padding: 0.5rem;/* Agrega un padding de 0.5rem para aumentar el área clicable del botón */
+}
+
+   /* Estilo cuando el botón de menú hamburguesa está en foco */
+.navbar-toggler:focus {
+    box-shadow: none; /* Elimina la sombra del botón cuando está en foco para un diseño más limpio */
+}
